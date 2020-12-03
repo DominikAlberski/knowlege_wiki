@@ -25,3 +25,7 @@ class UserDecorator
   end
 end
 ```
+# Factory pattern
+Factory is an object responsible for creating other objects based on given
+requirements.
+[refactoring guru](https://refactoring.guru/design-patterns/factory-method/ruby/example)
