@@ -29,3 +29,8 @@ end
 Factory is an object responsible for creating other objects based on given
 requirements.
 [refactoring guru](https://refactoring.guru/design-patterns/factory-method/ruby/example)
+
+# Observer pattern
+Observer is an object that "observs" behavior change or state change on other objects in my understanding it's similar to callbacks, but it's job is rather to inform about change and not to exactly act on it which should be done by other object.
+observer pattern example [refactoring guru](https://refactoring.guru/design-patterns/observer/ruby/example)
+[article on medium](https://medium.com/@mitchocail/observer-pattern-in-ruby-e80ac3c1dac7)
