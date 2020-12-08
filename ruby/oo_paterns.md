@@ -34,3 +34,8 @@ requirements.
 Observer is an object that "observs" behavior change or state change on other objects in my understanding it's similar to callbacks, but it's job is rather to inform about change and not to exactly act on it which should be done by other object.
 observer pattern example [refactoring guru](https://refactoring.guru/design-patterns/observer/ruby/example)
 [article on medium](https://medium.com/@mitchocail/observer-pattern-in-ruby-e80ac3c1dac7)
+
+# Singelton pattern
+In ruby it's implemented by including Singleton module into class.
+This pattern is meant to ensure that only one instance of class will be present
+By including Singleton module method new is set to private and we gain accessbrew to instance method instead
