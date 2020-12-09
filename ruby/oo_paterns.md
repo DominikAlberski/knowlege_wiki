@@ -39,3 +39,6 @@ observer pattern example [refactoring guru](https://refactoring.guru/design-patt
 In ruby it's implemented by including Singleton module into class.
 This pattern is meant to ensure that only one instance of class will be present
 By including Singleton module method new is set to private and we gain accessbrew to instance method instead
+
+# State pattern 
+It's an representation of state machine. Every single state is represented by single class with logic discrabing transition to next state within given context.
