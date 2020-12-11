@@ -3,3 +3,6 @@ the best approach seems to be dependency injection,
 in such a way in test condition `$stdin` or `$stout`
 can by easily replaced by other object
 [link to gist](https://gist.github.com/myronmarston/d9a699c1c0c74b992ceb1bbe6b4b2c6c)
+
+If you wont to use upper scope `let` definition use `super()` exp.:
+`let(:params) { super().merge(second_params: :smg) }`
