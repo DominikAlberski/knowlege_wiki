@@ -42,3 +42,6 @@ By including Singleton module method new is set to private and we gain accessbre
 
 # State pattern 
 It's an representation of state machine. Every single state is represented by single class with logic discrabing transition to next state within given context.
+ 
+# Builder pattern
+This pattern is to useed in creation of complex objects. Exp. class containing amother class containing another class. As an reference look at [refactoring guru]
