@@ -23,7 +23,7 @@ Basic app structure:
   </body>
 ```
 
-# computed properties
+### computed properties
 
 ```vue
 data: {
@@ -40,7 +40,7 @@ act accordingly if the action is setting or getting the value
 
 `v-model` - allows to bind data from input into data property allowed for reactive actions
 
-# methods
+### methods
 are trigger able and computed properties are based on reactivity
 
 `v-once` - updates value only once
@@ -62,3 +62,58 @@ array based class binding syntax
 
 You can combine object with array based notation
 `v-bind:class="[{css-class-name: vueDataAttr}, otherDataAttr]"`
+
+### Components
+
+Component defined within main Vue app
+
+```vue
+  <first-component user-id-"123"> # for component to accept data like this it need to be in kebab-case which further down should be reference as UserID in CamelCase. Vue will automatically convert passed JSON string into object if we precede name of prop in template with v-bind: or simple :
+    <template v-slot:mySlotName>
+      This will not be renderd unless in template there would be
+      <slot name="mySlotName">{{ message }}</slot>
+    </template>
+  </first-component>
+
+Vue.component('first-component', {
+  template: '<div> this will be displayed as in first-component tag with {{ message }} <slot name="mySlotName"></slot></div>',
+
+  props: ['userID'] #
+  data: function() {
+    return { message: 'some message'}
+  } # this is main diff from data in components you need function returning object
+});
+```
+#### Single File Component SFC
+
+```vue
+import MyComponent from './path/to/component' # path/to/component.vue
+
+Vue.component('my-component', MyComponent)
+
+new Vue({
+  el: '#app',
+
+  data: {
+    message: 'test'
+  }
+});
+
+# inside path/to/component.vue
+
+<template>
+  <div> Hello from component {{ test }} </div> # SINGLE WRAPPING TAG!!!
+  <div> </div> # This will fail
+</template>
+
+<script>
+  module.exports = {
+    data: function() {
+      return { test: 'Test message' }
+    }
+  }
+</script>
+
+<style>
+</style>
+```
