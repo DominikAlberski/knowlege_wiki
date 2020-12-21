@@ -48,3 +48,37 @@ This pattern is to useed in creation of complex objects. Exp. class containing a
 
 ### Chain of responsibility
 When object doesn't know how to respond to given method it should know who to ask for it. This pattern is implemented around method missing in ruby but from my understanding delegation should by fine for small amount of methods.
+
+### Command
+Allow for generic object to have different commends. Generic class can by instantiate with actions (aka other classes responsible for business logic), this classes are passed to object in arguments they have unified interface and can be executed exp:
+```ruby
+class Button
+  def initialize(options)
+    @label= options[:label]
+    @action = options[:action].new
+  end
+
+  def click
+    @action.execute
+  end
+end
+
+class ExpAction
+  def execute
+    'do some stuff'
+  end
+end
+
+class ExpAction2
+  def execute
+    'do some other stuff'
+  end
+end
+
+Button.new(labe: "button_1", ExpAction).execute
+=> 'do some stuff'
+
+Button.new(labe: "button_1", ExpAction2).execute
+=> 'do some other stuff'
+
+```
