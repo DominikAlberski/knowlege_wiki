@@ -114,6 +114,6 @@ new Vue({
   }
 </script>
 
-<style>
+<style scoped> # when scoped is used style definitions are scoped to component
 </style>
 ```
