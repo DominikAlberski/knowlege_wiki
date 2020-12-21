@@ -1,4 +1,4 @@
-# Decorator pattern
+### Decorator pattern
 Docorateor is an object that takes as an argument other object and adds new functionalities to it.
 As an simple example User has a name and surname as separeted fileds and user decorator has fullname method.
 ```ruby
@@ -25,23 +25,26 @@ class UserDecorator
   end
 end
 ```
-# Factory pattern
+### Factory pattern
 Factory is an object responsible for creating other objects based on given
 requirements.
 [refactoring guru](https://refactoring.guru/design-patterns/factory-method/ruby/example)
 
-# Observer pattern
+### Observer pattern
 Observer is an object that "observs" behavior change or state change on other objects in my understanding it's similar to callbacks, but it's job is rather to inform about change and not to exactly act on it which should be done by other object.
 observer pattern example [refactoring guru](https://refactoring.guru/design-patterns/observer/ruby/example)
 [article on medium](https://medium.com/@mitchocail/observer-pattern-in-ruby-e80ac3c1dac7)
 
-# Singelton pattern
+### Singelton pattern
 In ruby it's implemented by including Singleton module into class.
 This pattern is meant to ensure that only one instance of class will be present
 By including Singleton module method new is set to private and we gain accessbrew to instance method instead
 
-# State pattern 
+### State pattern
 It's an representation of state machine. Every single state is represented by single class with logic discrabing transition to next state within given context.
- 
-# Builder pattern
+
+### Builder pattern
 This pattern is to useed in creation of complex objects. Exp. class containing amother class containing another class. As an reference look at [refactoring guru]
+
+### Chain of responsibility
+When object doesn't know how to respond to given method it should know who to ask for it. This pattern is implemented around method missing in ruby but from my understanding delegation should by fine for small amount of methods.
