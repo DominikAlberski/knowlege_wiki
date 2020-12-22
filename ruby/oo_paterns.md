@@ -82,3 +82,8 @@ Button.new(labe: "button_1", ExpAction2).execute
 => 'do some other stuff'
 
 ```
+### Mediator
+It's an object that encapsulates logic responsible for other objects interactions
+
+### Proxy
+Proxy is similar to decorator in that way that its build with other object in mind but unlike decorator it's purpose is not to add functionality on top of existing one but rather restrict functionality of given object or provide some sort of restricted access to it.
