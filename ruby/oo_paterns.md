@@ -87,3 +87,7 @@ It's an object that encapsulates logic responsible for other objects interaction
 
 ### Proxy
 Proxy is similar to decorator in that way that its build with other object in mind but unlike decorator it's purpose is not to add functionality on top of existing one but rather restrict functionality of given object or provide some sort of restricted access to it.
+
+
+### Facade
+It's layer providing simplified interface for complicated underling objects libraries etc.
