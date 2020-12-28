@@ -65,7 +65,7 @@ You can combine object with array based notation
 
 ### Components
 
-Component defined within main Vue app
+#### Component defined within main Vue app
 
 ```vue
   <first-component user-id-"123"> # for component to accept data like this it need to be in kebab-case which further down should be reference as UserID in CamelCase. Vue will automatically convert passed JSON string into object if we precede name of prop in template with v-bind: or simple :
@@ -94,6 +94,9 @@ Vue.component('my-component', MyComponent)
 new Vue({
   el: '#app',
 
+  # as alternative to Vue.component we can use syntax and it is registered locally:
+  # components: { MyComponent }
+
   data: {
     message: 'test'
   }
@@ -116,4 +119,19 @@ new Vue({
 
 <style scoped> # when scoped is used style definitions are scoped to component
 </style>
+```
+
+###### Props
+
+```
+<!-- in html: -->
+<props title="Title for my props" :is-published="false" :views="123", :post="post" />
+
+<!-- in component -->
+  props: {
+    title: String,
+    control: Boolean,
+    counter: Number,
+    post: Object
+  }
 ```
