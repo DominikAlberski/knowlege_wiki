@@ -123,14 +123,18 @@ new Vue({
 
 ###### Props
 
-```
-<!-- in html: -->
-<props title="Title for my props" :is-published="false" :views="123", :post="post" />
+```vue
+# in html:
+<props title="Title for my props" :is-published="false" :views="123", :post="post"
+# v-bind="post" binds object properties that can be accepted singularly inside components props />
 
-<!-- in component -->
+# in component:
   props: {
     title: String,
-    control: Boolean,
+    control: {
+      type: [Boolean, Number],
+      default: false # this way when prop isn't passed thru we still have default
+    }
     counter: Number,
     post: Object
   }
