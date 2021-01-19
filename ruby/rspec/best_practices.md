@@ -6,3 +6,14 @@ can by easily replaced by other object
 
 If you wont to use upper scope `let` definition use `super()` exp.:
 `let(:params) { super().merge(second_params: :smg) }`
+
+When using stubs and checking if method have been called with different set of
+arguments one can use multiple with's
+```ruby
+  expect(object)
+    .to have_received(call)
+    .ordered # if order of call got metter
+    .with(some_args)
+    .wtih(some_other_args)
+    .with() # etc as long as you need
+```
