@@ -149,3 +149,33 @@ new Vue({
     post: Object
   }
 ```
+
+### EVENTS
+` v-on:[EVENT_TYPE].[Modifier]="[ACTION]" `
+` v-on == @ `
+Common event types
+  * click
+  * submit
+  * keyup - needs pair with specific key as modifier
+  <!-- keyup.escape="someFunciton" -->
+  * custom event
+
+Modifiers:
+  * prevent - prevents default event action
+  <!-- v-on:click.prevent="someFunction" -->
+  * once - lets action happen once
+
+#### custom events
+Application specific event
+They are the only way to communicate from child to parent component
+
+exp:
+child:
+  $emit('my-event', only_one_optional_parameter)
+parent:
+  v-on:my-event="myFunction($event)"
+
+
+
+
+
