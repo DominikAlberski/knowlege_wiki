@@ -24,3 +24,9 @@ returns first value from enumerable that for given block returns true
   data.detect { |d| d == :something }
   # => :something
 ```
+`each_slice`
+enumarator method for procesing in batches of given size
+```ruby
+  array.each_slice(5) { |batch| "batch.each(&.smg)" }
+  # => enumerator
+```
