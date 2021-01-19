@@ -68,7 +68,7 @@ You can combine object with array based notation
 #### Component defined within main Vue app
 
 ```vue
-  <first-component user-id-"123"> # for component to accept data like this it need to be in kebab-case which further down should be reference as UserID in CamelCase. Vue will automatically convert passed JSON string into object if we precede name of prop in template with v-bind: or simple :
+  <first-component user-id="123"> # for component to accept data like this it need to be in kebab-case which further down should be reference as UserID in CamelCase. Vue will automatically convert passed JSON string into object if we precede name of prop in template with v-bind: or simple :
     <template v-slot:mySlotName>
       This will not be renderd unless in template there would be
       <slot name="mySlotName">{{ message }}</slot>
@@ -94,7 +94,7 @@ Vue.component('my-component', MyComponent)
 new Vue({
   el: '#app',
 
-  # as alternative to Vue.component we can use syntax and it is registered locally:
+  # as alternative to Vue.component we can use other syntax to register locally:
   # components: { MyComponent }
 
   data: {
@@ -105,12 +105,22 @@ new Vue({
 # inside path/to/component.vue
 
 <template>
-  <div> Hello from component {{ test }} </div> # SINGLE WRAPPING TAG!!!
+  <div>
+    <p> Hello from component {{ test }} </p>
+    <inside-component/>
+  </div> # SINGLE WRAPPING TAG!!!
+
   <div> </div> # This will fail
 </template>
 
 <script>
+  const InsideComponent = require('./InsideComponent') # component in other component
+
   module.exports = {
+    components: {
+      InsideComponent
+    },
+
     data: function() {
       return { test: 'Test message' }
     }
