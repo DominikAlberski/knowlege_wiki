@@ -176,6 +176,8 @@ parent:
   v-on:my-event="myFunction($event)"
 
 
+v-on.click.alt="myFunction" - listing for click event with pressed alt key
+
 
 
 
