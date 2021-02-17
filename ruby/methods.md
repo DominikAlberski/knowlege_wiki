@@ -30,3 +30,10 @@ enumarator method for procesing in batches of given size
   array.each_slice(5) { |batch| "batch.each(&.smg)" }
   # => enumerator
 ```
+
+`tap`
+it's used to "tap into" method shain and do soething with intermintet values
+```ruby
+  array.map(&:do_something).tap {puts "arra_item_after_something: #{_1.inspect}""}.map(&:do_smg_else)
+```
+in example it's used for debugging pouposes
