@@ -15,3 +15,23 @@ The NOT operator negates the result of the EXISTS operator.
 The NOT EXISTS is opposite to EXISTS.
 It means that if the subquery returns no row, the NOT EXISTS returns true.
 If the subquery returns one or more rows, the NOT EXISTS returns false.
+
+
+ARRAY_AGG()
+Allows to return values in form of an array grouped by other values. For example
+in join table it allows to retrun data in form of:
+user_id: 1, ther_model_ids: [1, 2, 5]
+
+```ruby
+CustomQueue::Permission.select('custom_queue_id, ARRAY_AGG(user_id)').group(1)
+```
+You can decide on the order of the returned values in array
+```SQL
+title,
+    ARRAY_AGG (
+        first_name || ' ' || last_name
+        ORDER BY
+            first_name
+    ) actors
+
+```
