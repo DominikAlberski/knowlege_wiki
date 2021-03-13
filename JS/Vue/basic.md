@@ -178,6 +178,64 @@ parent:
 
 v-on.click.alt="myFunction" - listing for click event with pressed alt key
 
+Component comunication:
+parent to component
+- props
+- props change - component reacts to change
+component to parent
+- custom event
+- new events listeners react to changes
+component to component
+- event bus
+  - emit events to an EventBus
+  - register anyone who wants to listen in that channel
+  - cam have many components
 
+EventBus
+```js
+bus.js
+  import Vue from 'vue';
 
+  module.exports = new Vue();
+```
+compA
+```js
+<template>
+    <button class="p-4 border bg-gray-100 rounded-lg mb-12" @click.prevent="sayHello">Say Hello to Component B!</button>
+</template>
+
+<script>
+    const EventBus = require('../bus') // require file with EventBus
+    module.exports = {
+        methods: {
+            sayHello: function () {
+                EventBus.$emit('say-hello');  // send event to event Bus
+            }
+        }
+
+    }
+</script>
+```
+comB
+```js
+<template>
+    <div>{{ message }}</div>
+</template>
+
+<script>
+    const EventBus = require('../bus'); // require file with EventBus
+
+    module.exports = {
+        data: function () {
+            EventBus.$on('say-hello', function () {
+              this.message = 'Hello from component A';
+            }.bind(this)); // alternatively use '() =>' syntax and deleta .bind(this)
+
+            return {
+                message: 'Lonely Component Here!'
+            }
+        }
+    }
+</script>
+```
 
