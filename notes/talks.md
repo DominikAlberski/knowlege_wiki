@@ -83,3 +83,27 @@ brak feadbacku od firmy tylko sucha wiadomość od rekruterki
 
 Bug na stronie onbordingu powtórzony akapit w sekcji Before you start a new job
 
+Wewnętrzne comiesięczne konferencje mające na celu dzielić się wiedzą
+Budżet rozwojowy, na szkolenia / konferencje.
+
+Klienci zagraniczni kraje skandynawskie / usa / bliskie relacje z klientami
+Team -> PM/Ecaount Menager, raczej mniejsze zespoły, maxymanly 10 osób
+ale zdarzają się 2 czy nawet 1 osobwoe becendowe projekty.
+
+Czas trwania -> różnie
+W razie przestojów fimra pokrywa koszty przestoju, możliwość zmiany projektu
+
+Płaska struktóra
+
+Kwartalne badania satysfakcji z pracy
+Spotkania 1-1 z leaderem.
+
+B2B
+
+Rozmowa techniczna ok 1.5h teoretyczno / może praktyczna / eng / pytania
+Piotrek - sernior RoR dev TL RoR
+
+google meet
+
+praca 100% zdalna możliwe wizyty w biurze w Łodzi
+

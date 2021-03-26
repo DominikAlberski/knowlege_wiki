@@ -6,11 +6,13 @@ Combine with `owner` it allows to determine on which class the method was define
   example.method('greet').owner
   #<Class:SomeExample::Base>
 ```
+
 ---
 
 `source_location`
 Provides exact information of file name and line number of method definition.
 Very handy to finding about some unknown methods from modules etc.
+
 ---
 
 `filter_map`
@@ -19,6 +21,7 @@ Combines filter and map exmp:
   data.filter_map { |d| d if :condition }
   # => [...]
 ```
+
 ---
 
 `detect`
@@ -27,6 +30,7 @@ returns first value from enumerable that for given block returns true
   data.detect { |d| d == :something }
   # => :something
 ```
+
 ---
 
 `each_slice`
@@ -35,14 +39,17 @@ enumarator method for procesing in batches of given size
   array.each_slice(5) { |batch| "batch.each(&.smg)" }
   # => enumerator
 ```
+
 ---
 
 `tap`
 it's used to "tap into" method chain and do something with intermittent values
 ```ruby
-  array.map(&:do_something).tap {puts "arra_item_after_something: #{_1.inspect}""}.map(&:do_smg_else)
+  array.map(&:do_something).tap { puts "arra_item_after_something: #{_1.inspect}""}.map(&:do_smg_else)
 ```
-in example it's used for debugging pouposes
+
+in example it's used for debugging purposes
+
 ---
 
 `grep`
@@ -54,5 +61,7 @@ example:
 %[dolary centy].grep(/do/) # => ["dolary"]
 %[dolary centy].grep(/do/) { |x| x + " $" } #=> ["dolary $"]
 ```
+
 Argument for grep don't have to be regexep it can be any other object that implements `===`
+
 ---
