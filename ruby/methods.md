@@ -45,7 +45,10 @@ enumarator method for procesing in batches of given size
 `tap`
 it's used to "tap into" method chain and do something with intermittent values
 ```ruby
-  array.map(&:do_something).tap { puts "arra_item_after_something: #{_1.inspect}""}.map(&:do_smg_else)
+  array
+    .map(&:do_something)
+    .tap { puts "arra_item_after_something: #{_1.inspect}"}
+    .map(&:do_smg_else)
 ```
 
 in example it's used for debugging purposes
