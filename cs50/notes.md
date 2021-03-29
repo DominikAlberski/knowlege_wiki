@@ -153,3 +153,28 @@ int my_other_func(void) // this function returns integer
   return n;
 }
 ```
+
+`dbug50`
+
+
+#### Array
+```C
+int scores[3]; // Total number of items in array
+scores[0] = 72; // Array have to start with '0' Dahhh ;P
+scores[1] = 73;
+scores[2] = 33;
+```
+
+Constance declaration
+cons int TOTAL = 3;
+
+show exit status of program `echo $?`
+
+To pass array to function make:
+```C
+(void) my_function(int collection[]);
+```
+
+You can't return array from function but you can make array static and return
+pointer (some more advance C concept)
+
