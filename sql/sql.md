@@ -35,3 +35,6 @@ title,
     ) actors
 
 ```
+
+`LIKE` "\_" - one single character
+`LIKE` "%" - any character
