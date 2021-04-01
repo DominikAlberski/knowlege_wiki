@@ -38,3 +38,11 @@ title,
 
 `LIKE` "\_" - one single character
 `LIKE` "%" - any character
+
+---
+
+(site with datasets)[kaggle.com] to have some fun with or to simply have
+something to train on
+
+\copy table_name from 'file_anme.csv' CSV dellimiter ',' NULL AS 'N/A' header;
+

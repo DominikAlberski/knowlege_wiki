@@ -178,3 +178,12 @@ To pass array to function make:
 You can't return array from function but you can make array static and return
 pointer (some more advance C concept)
 
+Command line arguments in C scripts
+```C
+int main(int argc, string argv[])
+{}
+```
+ - argc, argv - conventional names for command line arguments
+  - argc - how much arguments user provided with program name
+  - argv - argument vector(array) argv[0] - always the name of the program
+
