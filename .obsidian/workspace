@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes.md",
+            "file": "cs50/notes.md",
             "mode": "source"
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes.md",
+                "file": "cs50/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,6 +86,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "cs50/notes.md",
     "notes.md",
     "Untitled.md",
     "ruby/rails/methods.md",
@@ -94,7 +95,6 @@
     "notes/talks.md",
     "markdown/cheat_sheat.md",
     "JS/Vue/basic.md",
-    "bash/syntax.md",
-    "api/api.md"
+    "bash/syntax.md"
   ]
 }

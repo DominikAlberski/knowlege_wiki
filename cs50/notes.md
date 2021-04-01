@@ -157,7 +157,8 @@ int my_other_func(void) // this function returns integer
 `dbug50`
 
 
-#### Array
+##### Array
+
 ```C
 int scores[3]; // Total number of items in array
 scores[0] = 72; // Array have to start with '0' Dahhh ;P
