@@ -65,6 +65,7 @@ example:
 %[dolary centy].grep(/do/) { |x| x + " $" } #=> ["dolary $"]
 ```
 
-Argument for grep don't have to be regexep it can be any other object that implements `===`
+Argument for grep don't have to be regexep,
+it can be any other object that implements `===`
 
 ---

@@ -44,3 +44,46 @@ wklejeniu linku do taska "using link:"
 w przypadku nowej strony dodać ją do seedów w weebsite
 dodać produkty do głównych seedów
 
+---
+
+order id: 1069621
+
+
+--- 
+
+automatycznie wysyłanie kompensaty odliczanie na poczet fv
+
+wszystko co jest w kopmensatch jest w raportach cod
+
+nie wiemy czy kompensaty pokrywają się zpłątnościami
+Czy mamy wszystkie raporty DPD? mamy 92 czy to wszystkie raporty.
+Zsumować fv od dpd i zobaczyć ile przesłaliśmy do dpd kwota kompensat + kwota przelewów = kwacie fv od dpd.
+
+Ile mieliśmy wypracowanego CoD jeżeli nie zgadza się z raportami to skąd wynika różnica
+
+Potwierdzić kwotę 11m u nich ile powinni przysłać nam raportów
+
+---
+
+Dodać stopkę w mailu
+
+Po okresie próbnym
+
+House Rules Slack
+
+Where are you know - informacje o urlopie plus info w kalendarzu
+Profil na slacku - uzupełnić
+
+Workflow
+scrum - agile
+	- standupy
+	- pivot, trello, notion
+Czas w clockify
+wybranie projekt i logowanie rzeczy związane z projektem
+o 13 daily projektowe
+2 blogi dev news , zdalni.pl
+
+feedback - jest po 1 albo po 3 miesiącu, i na tej podstawie dalsza rozmowa,
+później co ~6m
+2 FE, BE ja + ? + Miko
+
