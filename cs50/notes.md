@@ -166,6 +166,9 @@ scores[1] = 73;
 scores[2] = 33;
 ```
 
+To assaign values to an array in the initialization phase use:
+`int numbers[] = {1, 4, 5, 7};`
+
 Constance declaration
 cons int TOTAL = 3;
 
@@ -188,3 +191,25 @@ int main(int argc, string argv[])
   - argc - how much arguments user provided with program name
   - argv - argument vector(array) argv[0] - always the name of the program
 
+---
+
+#### Algorithms
+
+help50
+style50
+check50
+debug50
+
+running time - how long algorithms run
+
+#### data types
+
+defining person datatype
+```C
+typedef struct
+{
+	string name;
+	string number;
+}
+person; 
+```
