@@ -69,3 +69,18 @@ Argument for grep don't have to be regexep,
 it can be any other object that implements `===`
 
 ---
+
+throw catch behavior
+when throw is inside catch block it will omit any rescue in that block
+```ruby
+catch(:halt) do
+  begin
+    throw :halt
+  rescue Exception => exception # this will not be executed
+    puts "rescue: #{exception.inspect}"
+    raise
+  ensure
+    puts "ensure"
+  end
+end
+```
