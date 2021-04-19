@@ -6,11 +6,10 @@
       {
         "id": "2f46b112d4b67842",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cs50/notes.md",
+            "file": "notes/talks.md",
             "mode": "source"
           }
         }
@@ -69,10 +68,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs50/notes.md",
+                "file": "notes/talks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -85,14 +86,15 @@
     "width": 300,
     "collapsed": true
   },
+  "active": "2f46b112d4b67842",
   "lastOpenFiles": [
+    "notes/talks.md",
     "cs50/notes.md",
     "notes.md",
     "Untitled.md",
     "ruby/rails/methods.md",
     "productivity/google.md",
     "ruby/methods.md",
-    "notes/talks.md",
     "markdown/cheat_sheat.md",
     "JS/Vue/basic.md",
     "bash/syntax.md"

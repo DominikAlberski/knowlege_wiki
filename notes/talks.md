@@ -71,6 +71,8 @@ Czasami jest mała presja na czas wykonania
 
 Oferta 8500 brutto ~ 55/h
 
+
+
 ### Smart Pension
 
 Zadanie rekrutacyjne ogólnie dostępne parsowanie logów
