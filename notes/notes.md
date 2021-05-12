@@ -87,3 +87,66 @@ feedback - jest po 1 albo po 3 miesiącu, i na tej podstawie dalsza rozmowa,
 później co ~6m
 2 FE, BE ja + ? + Miko
 
+order_meta
+dpd_label
+markets
+line_items
+gift
+products
+categories
+traits
+vat_invoice_vendors
+vat_invoice_registers
+vat_invoice_register_entry_vat_groups
+
+```ruby
+  def model_to_fixture(model:, scope:, ids:)
+    constantize(model)
+      .where(scope, ids)
+  end
+
+  def model_fixture_creator(model:, attributes_anonymezed: {})
+    table_name = model.table_name
+    path = Rails.root.join(
+      format("/spec/fixtures/%<table>s.yml", table: table_name)
+    )
+
+    File.open(path, "w") do |f|
+      data_for_file = {}
+      counter = 0
+      model_to_fixture(model: model, scope: scopes[table_name], ids: )
+        .in_batches(of: 100) do |batch|
+          data = batch.inject({}) do |memo_hash, table|
+            counter += 1
+            memo_hash["#{table.id}_#{counter}"] = table.attributes.dup.merge(attributes_anonymezed)
+            memo_hash
+          end
+          data_for_file = data_for_file.merge(data)
+        end
+      f.write(data_for_file.to_yaml)
+    end
+  end
+
+  def scopes
+    scopes = Hash.new('order_id in (?)')
+    scopes.merge({
+      "user_languages" => 'id in (?)', #markets_for_fixtures.pluck(:user_language_id)
+      "markets" => "participant_id in (?) AND participant_type = 'Order'",
+    })
+  end
+
+  def ids
+    ids = Hash.new(orders_for_fixtures.pluck(:id))
+    ids.merge({
+      "user_languages" => model_to_fixture(model: Market, scope: scopes["markets"], ids: orders_for_fixtures.pluck(:id)),
+    })
+  end
+```
+
+---
+
+font 10px
+
+Ubile Sp. z o. o., NIP: 701-03-59-284 ul. Idzikowskiego 14, 00-710 Warszawa
+
+Allepharm Limited S.K.A., NIP: 525-268-70-16 ul. Jana III Sobieskiego 110, 00-764 Warszawa
