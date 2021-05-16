@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/talks.md",
+            "file": "notes/notes.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/talks.md",
+                "file": "notes/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +88,14 @@
   },
   "active": "2f46b112d4b67842",
   "lastOpenFiles": [
+    "notes/notes.md",
+    "ruby/rails/Untitled.md",
+    "ruby/rails/methods.md",
+    "notes/vibemetrics.md",
+    "Untitled.md",
     "notes/talks.md",
     "cs50/notes.md",
     "notes.md",
-    "Untitled.md",
-    "ruby/rails/methods.md",
     "productivity/google.md",
     "ruby/methods.md",
     "markdown/cheat_sheat.md",

@@ -108,4 +108,3 @@ Piotrek - sernior RoR dev TL RoR
 google meet
 
 praca 100% zdalna możliwe wizyty w biurze w Łodzi
-

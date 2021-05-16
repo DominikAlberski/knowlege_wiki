@@ -1,3 +1,6 @@
+ewa.stańczyk@admad.io
+bartek.luchowski@admad.io ???
+
 Atrybucja
 reklama nowa strona reklama
 przeklikanie przez pewne strony
