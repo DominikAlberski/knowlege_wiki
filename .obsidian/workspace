@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cs50/notes.md",
-            "mode": "preview"
+            "file": "notes/talks.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs50/notes.md",
+                "file": "notes/talks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "2f46b112d4b67842",
   "lastOpenFiles": [
-    "cs50/notes.md",
-    "notes/notes.md",
-    "notes/vibemetrics.md",
     "notes/talks.md",
-    "notes/test.md",
-    "ruby/rails/Untitled.md",
-    "ruby/rails/methods.md",
-    "Untitled.md",
-    "notes.md",
-    "productivity/google.md"
+    "vim/cheat_sheat.md",
+    "ruby/rails/patterns.md",
+    "markdown/cheat_sheat.md",
+    "notes/vibemetrics.md",
+    "README.md",
+    "cs50/notes.md",
+    "Sublime/productivity.md",
+    "Sublime/Regex.md",
+    "Untitled.md"
   ]
 }

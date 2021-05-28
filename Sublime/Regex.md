@@ -1,0 +1,3 @@
+ - `.` - any character
+ - `+` - one or more characters
+ - `(?<=)` - negative macher it looks for expresion within the brackets but do not select it exp: `(?<=<h2>.+</2>` will match "\<h2>**test\</h2>**" 

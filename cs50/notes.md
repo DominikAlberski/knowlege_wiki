@@ -43,8 +43,8 @@ string - collection of characters
 ##### Operators
 Arithmetic
 = - assign
-+ - plus
-- - minus
+''+'' - plus
+''-'' - minus
 / - divider
 % - modulo
 
